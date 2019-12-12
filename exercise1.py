@@ -6,8 +6,15 @@ while True:
     mi = 1.6 * km
     print("Miles: " + str(mi))
     pitanje = input("Wanna try again? (yes/no): ")
-    if pitanje != "yes":
+    if pitanje.lower() == "no":
         break
+    elif pitanje.lower() == "yes":
+        print("Ok. Here you go!")
+    else:
+        print("Can't recognize this input.")
+        break
+
+
 
 
 
